@@ -1,5 +1,5 @@
 {
-  "name": "zenubu.ngStrapPatches",
+  "name": "angular-strap-patches",
   "version": "0.1.1",
   "description": "Monkeypatches for mgcrea/angular-strap",
   "dependencies": {},
