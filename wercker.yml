@@ -12,12 +12,11 @@ build:
         code: gulp bumpVersion
     - script:
         name: Delete unneeded files
-        code: rm -rf .tmp bower_components node_modules
+        code: ls -A | grep -v .json | grep -v zenubu.ngStrap | xargs rm -rf
 
 deploy:
   steps:
     - leipert/git-push:
          gh_oauth: $GH_TOKEN
-         discard_history: false
          tag: bower
          tag_overwrite: true
