@@ -1,0 +1,29 @@
+{
+  "name": "zenubu.ngStrapPatches",
+  "version": "0.1.0",
+  "homepage": "https://github.com/zenubu/angular-strap-patches",
+  "authors": [
+    "Zenubu"
+  ],
+  "description": "Monkeypatches for mgcrea/angular-strap",
+  "main": "foo",
+  "keywords": [
+    "angular",
+    "angular-strap",
+    "bootstrap",
+    "modals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src"
+  ],
+  "dependencies": {
+    "angular-sanitize": ">=1.2.14",
+    "angular-strap": "~2.1.6",
+    "lodash": "~3",
+    "moment": "~2.8"
+  }
+}

@@ -1,0 +1,21 @@
+box: leipert/ubuntu14.04-webessentials@2.0.1
+# Build definition
+build:
+  steps:
+    - npm-install
+    - leipert/yeoman-bower-install
+    - script:
+        name: Test and build angular-strap-patches
+        code: gulp
+    - script:
+        name: Delete unneeded files
+        code: ls -A | grep -v .json | grep -v ngStrap.js | xargs rm -rf
+
+deploy:
+  steps:
+    - leipert/git-push:
+         gh_oauth: $GH_TOKEN
+         branch: dist
+         discard_history: false
+         tag: bower
+         tag_overwrite: true

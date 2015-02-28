@@ -1,0 +1,38 @@
+{
+  "name": "zenubu.ngStrapPatches",
+  "version": "0.1.0",
+  "description": "Monkeypatches for mgcrea/angular-strap",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "gulp": "^3.8.11",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.9.2",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "husky": "^0.6.2",
+    "jshint-stylish": "^1.0.1"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenubu/angular-strap-patches.git"
+  },
+  "keywords": [
+    "angular",
+    "angular-strap",
+    "bootstrap",
+    "modals"
+  ],
+  "author": "Zenubu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zenubu/angular-strap-patches/issues"
+  },
+  "homepage": "https://github.com/zenubu/angular-strap-patches"
+}
