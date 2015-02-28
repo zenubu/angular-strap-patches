@@ -6,7 +6,9 @@
     "Zenubu"
   ],
   "description": "Monkeypatches for mgcrea/angular-strap",
-  "main": "foo",
+  "main": [
+    "zenubu.ngStrap.js"
+  ],
   "keywords": [
     "angular",
     "angular-strap",
@@ -17,7 +19,10 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "gulpfile.js",
+    "package.json",
+    "wercker.yml"
   ],
   "dependencies": {
     "angular-sanitize": ">=1.2.14",
