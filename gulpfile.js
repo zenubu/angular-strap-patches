@@ -23,7 +23,7 @@ gulp.task('default', ['lint', 'test', 'build']);
 
 gulp.task('test', ['lint']);
 
-gulp.task('build', ['templates', 'js', 'lint', 'bumpVersion']);
+gulp.task('build', ['templates', 'js', 'lint']);
 
 gulp.task('js', ['templates'], function () {
     return gulp.src(['src/**/*.js', '.tmp/**/*.js'])

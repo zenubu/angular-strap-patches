@@ -8,14 +8,16 @@ build:
         name: Test and build angular-strap-patches
         code: gulp
     - script:
+        name: Bump version (minor)
+        code: gulp bumpVersion
+    - script:
         name: Delete unneeded files
-        code: ls -A | grep -v .json | grep -v ngStrap.js | xargs rm -rf
+        code: ls -A | grep -v .json | grep -v zenubu.ngStrap | xargs rm -rf
 
 deploy:
   steps:
     - leipert/git-push:
          gh_oauth: $GH_TOKEN
-         branch: dist
          discard_history: false
          tag: bower
          tag_overwrite: true
