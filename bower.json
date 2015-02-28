@@ -17,8 +17,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "src"
+    "bower_components"
   ],
   "dependencies": {
     "angular-sanitize": ">=1.2.14",

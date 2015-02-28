@@ -52,5 +52,6 @@ gulp.task('lint', function () {
 gulp.task('bumpVersion', function(){
     return gulp.src('./*.json')
         .pipe(bump({version: bowerJSON.version}))
+        .pipe(bump({type:'patch'}))
         .pipe(gulp.dest('./'));
 });
